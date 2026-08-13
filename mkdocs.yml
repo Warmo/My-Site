@@ -1,5 +1,5 @@
 site_name: Warmo's Stuff
-site_url: http://warmo.dev
+site_url: https://warmo.dev
 site_description: All of my random projects!
 theme:
     name: material
@@ -17,8 +17,8 @@ theme:
         navigation.tabs.sticky
         toc.integrate
         search.highlight
-    logo: images/icons/maze-cornea.png
-    favicon: images/icons/maze-cornea-t.png
+    logo: /images/icons/maze-cornea.png
+    favicon: /images/icons/maze-cornea-t.png
     font:
         text: Quantico
 plugins:
@@ -35,12 +35,12 @@ plugins:
     - search
     - open-in-new-tab
     - rss:
-        match_path: "work/posts/.*"
+        match_path: "/work/posts/.*"
         date_from_meta:
             as_creation: date.created
             as_update: date.updated
         abstract_chars_count: -1
-        image: images/icons/maze-cornea.png
+        image: /images/icons/maze-cornea.png
     - git-revision-date-localized:
         exclude:
         - work/*
@@ -70,7 +70,7 @@ copyright: |
     &copy; 2025 <a href="https://github.com/Warmo"  target="_blank" rel="noopener">Jake W</a>
 repo_url: https://github.com/Warmo/warmo.github.io
 extra_css:
-    - stylesheets/extra.css
+    - /stylesheets/extra.css
 extra:
   analytics:
     provider: google
@@ -80,5 +80,5 @@ extra:
       link: https://universeodon.com/@Warmo
       name: Mastodon
     - icon: fontawesome/solid/rss
-      link: http://warmo.dev/feed_rss_created.xml
+      link: https://warmo.dev/feed_rss_created.xml
       name: RSS Feed
